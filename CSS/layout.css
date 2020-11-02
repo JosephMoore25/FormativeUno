@@ -17,6 +17,8 @@ body {
   background: var(--color-background);
   color: var(--color-text);
   transition: background 0.65s ease;
+  line-height: 1.5;
+  font-size: 120%;
 }
 
 #wrapper {
@@ -78,18 +80,39 @@ body {
   padding-left: 20px;
 }
 
-/* Fake image */
 img {
-  width: 50%;
-  padding: 20px;
-  border: 5px solid black;
+  width: 70%;
+  text-align: center;
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.fab.social {
+  margin-right: 1em;
+  color: var(--color-text);
+}
+
+.fab.social:hover {
+  color: var(--color-secondary);
+}
+
+.follow h3 {
+  margin-top: 0;
 }
 
 /* Add a card effect for articles */
 .card {
-  padding: 20px;
+  padding: 0 0.5em 1em;
   margin-top: 20px;
-  border: 5px solid black;
+  border-bottom: 3px solid var(--color-text);
 }
 
 /* Clear floats after the columns */
@@ -101,16 +124,15 @@ img {
 
 /* Footer */
 footer {
-  border-top: 2px solid var(--color-text);
   padding: 2em;
   text-align: center;
-  background: var(--color-background);
   margin-top: 2em;
 }
 
 footer .author-note {
-  color: var(--color-primary);
-  font-size: 2em;
+  font-style: italic;
+  color: var(--color-text);
+  font-size: 1.5em;
 }
 
 .btn {
@@ -175,6 +197,14 @@ footer .author-note {
 
   .hamburger {
     display: block;
+  }
+
+  .follow {
+    text-align: center;
+  }
+
+  .follow .fab.social {
+    margin: 0 1.5em;
   }
 
   .leftcolumn,
